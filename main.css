@@ -1,0 +1,535 @@
+body,html{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: "Times New Roman", Times, serif;
+	background-color: rgb(12,16,39);
+	position: relative;
+}
+
+.flex-row{
+	display: flex;
+	flex-direction: row;
+}
+
+.flex-col{
+	display: flex;
+	flex-direction: column;
+}
+
+#navigation{
+	padding: 10px;
+}
+
+
+/*Navigation*/
+.logo{
+	position: relative;
+	justify-content: space-around;
+	align-items: center;
+	width: 30%;
+}
+
+.logo img{
+	width: 40%;
+	margin-right: -20%; 
+}
+
+.logo h3{
+	color: #FFF;
+	width: 60%;
+	text-align: right;
+	text-align: center;
+}
+
+.searchProfile{
+	box-sizing: border-box;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	padding-left: 30%;
+	width: 70%;
+}
+
+
+/*Search Profile*/
+#search-box{
+	background-color: #12193e; 
+	width: 60%;
+	padding: 2%;
+	padding-right: 0;
+	border-radius: 15px;
+	position: relative;
+}
+
+
+#search-box input{
+	background-color: #12193e;
+	padding: 1%;
+	margin-left: 1%;
+	width: 75%;
+	height: 15px;
+	border: none;
+	color: white;
+	border-radius: 15px;
+}
+
+#search-box input:focus{
+	outline: none;
+	color: white;
+}
+
+
+.searchProfile i{
+	color: #FFF;
+	font-weight: 400;
+}
+
+.fa-bell{
+	font-size: 20px;
+}
+
+.searchProfile .profile{
+	background-image: url("Images/Shaik-Avaies.jpeg");
+	border-radius: 50%;
+	height: inherit;
+	height: 50px;
+	width: 50px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+#mainPage{
+	width: 70%;
+	padding-left: 8%;
+	padding-top: 2%;
+}
+
+
+#container{
+	position: relative;
+	padding-bottom: 13%;
+}
+
+
+/*Home*/
+#home{
+	color: white;
+}
+
+.home-image{
+	height: auto;
+	width: 420px;
+	background: url(Images/codeplay.PNG);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.Info{
+	width: 70%;
+	box-sizing: content-box;
+	padding: 5% 2%;
+}
+
+
+.codeplay{
+	justify-content: space-between;
+}
+
+.codeplay p,.british-brand{
+	color: #9C9FAF;
+}
+
+.british{
+	margin-top: -5%;
+}
+
+.british-brand{
+	line-height: 1.3rem;
+}
+
+
+.play-button{
+	margin-top: 5%;
+	align-items: center;
+}
+
+button{
+	height: 45px;
+	width: 150px;
+	color: white;
+	background: linear-gradient(to right,#3724B0,#C348DF);
+	border: none;
+	letter-spacing: 1px;
+	font-weight: 500;
+}
+
+.play-button p{
+	margin-left: 10%; 
+}
+
+/*SidePage - Similar Artists*/
+#sidePage{
+	margin-right: 3%;
+	padding: 1%;
+	width: 25%;
+}
+
+#sidePage header{
+	justify-content: space-between;
+	align-items: flex-end;
+	width: 100%;
+}
+
+#sidePage header h3{
+	color: #DDDEE1;
+	font-weight: 200;
+	letter-spacing: -0.5px;
+	font-size: 16px;
+	vertical-align: bottom;
+}
+
+#sidePage header h2{
+	color: #fff;
+}
+
+#similar-artists{
+	justify-content: space-around;
+	height: 38%;
+}
+
+.image{
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+}
+
+.image .content{
+	width: 80%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.image .love{
+	color: #93a8b3;
+}
+
+.content p{
+	color: #93a8b3;
+}
+
+.queueSong{
+	width: 60%;
+}
+
+.queueSong h3{
+	color: #fcfefe;
+	font-weight: 900;
+}
+
+.queueSong p{
+	margin-top: -1em;
+}
+
+
+.dropDown{
+	flex-grow: 1;
+	vertical-align: top;
+	text-align: right;
+	color: #93a8b3;
+}
+
+
+/*Music-List*/
+#music-list{
+	margin-top: 1%;
+}
+
+.music{
+	margin-top: 1%;
+	background-color: rgb(26, 30, 51);
+	justify-content: space-between;
+}
+
+.music-image{
+	width: 30%;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.music-image .queueSong{
+	width: 50%;
+}
+
+.music-image img{
+	height: 60px;
+}
+
+.music-image p{
+	color: #93a8b3;
+}
+
+.love-plus{
+	justify-content: space-around;
+	width: 13%;
+	margin-right: 3%;
+	align-items: center;
+	color: #93A8B3;
+}
+
+
+
+/*Recently-Played*/
+#recently-played{
+	padding: 5%;
+	margin-top: 10%;
+}
+
+#recently-played .image img{
+	width: 50px;
+}
+
+#recently-played .queueSong{
+	height: 60px;
+}
+
+
+
+
+/*Footer*/
+footer{
+	top: 86vh;
+	width: 100%;
+	position: fixed;
+	background-color: #282828;
+	color:  white;
+	justify-content: space-around;
+}
+
+#songImage{
+	width: 22%;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#songImage img{
+	height: 70px; 
+	width:;
+}
+
+#songImage h3{
+	font-weight: 200;
+}
+
+#songImage p{
+	color: #9B9B9B;
+}
+
+#songImage i{
+	margin-top: -2em;
+	color: #9B9B9B;
+}
+
+
+#audio-controls{
+	width: 50%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.acdiv1{
+	flex-grow: 2;
+}
+
+.acdiv2{
+	flex-grow: 1;
+}
+
+
+.controls{
+	height: 50px;
+	margin: auto;
+	width: 50%;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: -0.8em;
+}
+
+.controls i{
+	font-weight: 300;
+	color: #B3B3B3;
+}
+
+#pause{
+	font-weight: 100;
+	color: white;
+}
+
+#controlbarrail{
+	width: 75%;
+	height: 5px;
+	background-color: #404040;
+	position:  relative;
+	border-radius: 15px;
+}
+
+#controlbarfill{
+	width: 20%;
+	height: 5px;
+	background-color: #33E583;	
+}
+
+#ball{
+	top: 0;
+	left: 20%;
+	width: 15px;
+	height: 15px;
+	margin-top: -0.2em;
+	position:  absolute;
+	background-color: white;
+	border-radius: 50%;
+}
+
+.bar{
+	justify-content: space-around;
+	align-items: center;
+}
+
+#sound-controls{
+	width: 20%;
+	align-items: center;
+}
+
+#sound-controls i{
+	color: #9B9B9B;
+	padding: 15px; 
+}
+
+#sound-controls #controlbarfill{
+	background-color: #91D142;
+}
+
+#sound-controls #ball{
+	margin-top: -0.3em;
+	height: 18px;
+	width: 18px;;
+}
+
+
+
+/*Media Query*/
+@media (max-width: 1226px){
+	#sidePage{
+		width: 35%;
+	}
+}
+
+@media (max-width: 1052px){
+	footer{
+		top:86vh;
+	}
+	#sound-controls{
+		display: none;
+	}
+	#songImage{
+		width: 30%;
+	}
+	#mainPage{
+		padding-left: 5%;
+	}
+	#sidePage{
+		font-size: 16px;
+	}
+	.queueSong p{
+		display: none;
+	}
+
+}
+
+@media (max-width: 794px){
+	footer{
+		top: 87vh;
+	}
+	#songImage{
+		display: none;
+	}
+	#audio-controls{
+		width: 100%;
+	}
+	#sidePage{
+		margin-right: 5px;
+		width: 30%;
+	}
+	#similar-artists .content img{
+	  	height: 50px;
+	}
+	#recently-played .content{
+		font-size: 13px;
+	}
+	#recently-played .content img{
+		height: 30px;
+	}
+	.music .music-image{
+		width: 50%;
+	}
+}
+
+
+@media (max-width: 700px){
+	.logo{
+		display: none;
+	}
+	footer{
+		padding-left: 1%;
+		padding-bottom: 2%;
+	}
+	#sidePage{
+		display: none;
+	}
+	.searchProfile{
+		width: 100%;
+		margin: 0 auto; 
+		padding:0;
+		justify-content: space-around;
+	}
+	#search-box{
+		height: 15px;
+	}
+	#mainPage{
+		padding: 1%;
+		margin: 0 auto;
+		width: 80%;
+	}
+	#music-list{
+		padding-bottom: 7%;
+	}
+	#music-list img{
+		height: 50px;
+	}
+	.home-image{
+		margin-top: 15%;
+	}
+}
+
+
+
+/*Transitions and Transform*/
+.content img{
+	transition-property: transform;
+	transition-duration: 0.5s; 
+}
+.content img:hover{
+		transform: scale(1.1);
+}
+
+
+.music-image img{
+	transition-property: transform;
+	transition-duration: 0.5s; 
+}
+.music-image img:hover{
+		transform: scale(1.1);
+}
